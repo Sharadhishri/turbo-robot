@@ -1,0 +1,2 @@
+aws lambda create-function --region us-east-1 --function-name stopinstance --zip-file fileb://stopec2.zip --role <some_role> --handler ec2Instances.stop_ec2_handler --runtime python3.6 --timeout 15 --memory-size 512
+
